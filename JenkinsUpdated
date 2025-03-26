@@ -29,7 +29,7 @@ pipeline {
       withCredentials([string(credentialsId: 'dockeruser', variable: 'dockervarcode')]) {
         // withCredentials([usernamePassword(credentialsId: 'dockeruser', passwordVariable: 'dockerpass', usernameVariable: 'username')]) {
 
-        sh 'docker login -u kavyaganji95 -p ${dockerpass}'
+        sh 'docker login -u kavyaganji95 -p ${dockervarcode}'
                                                                     }
                                 }
             }
